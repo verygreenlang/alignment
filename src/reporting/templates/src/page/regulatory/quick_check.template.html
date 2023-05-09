@@ -1,0 +1,76 @@
+
+<!-- Page Compliance_quick_check!-->
+    <article class="pages" id="pages_quick_check">
+        <!-- Header - DO NOT CHANGE /!-->
+            <img class="head_logo_fg" src="images/full_logo.png">
+            <h2 > <!-- id="columns-title"> -->
+                <span class="head_title"> FINGREEN AI ESG Report </span>
+                <br/>
+                <span class="head_date"> Generated on {{data.date}} </span>
+            </h2>
+            <div class="head_line"></div>
+                <br/>
+            <h2 > <!-- id="columns-title"> -->
+                <span class="page_title"> ESG Regulatory Compliance </span>
+                <br/>
+                <span class="page_subtitle"> Regulations Alignment Quick Check </span>
+            </h2>
+        <!--CHANGE WHOLE PARAGRAPH!-->
+        <p>{{data.company_name}} is registered as a company in California, United States. Its activities and target customers are deployed worldwide, meaning regulations from different countries may apply on its activities, depending on where and hows such activities are implanted.
+
+You selected in your settings for this report a focus on EU Taxonomy and related regulations with a worldwide scope. We have thus selected the three main regulations to watch and estimated the alignment of Apple INC. to those regulations.
+
+No major issue has been detected. To get a more detailed analysis, select a specific regulation in your FINGREEN AI dashboard.</p>
+
+        <span class="page_subtitle">Top 3 regulations to watch</span>
+       <table width=100%>
+        <tr width=100%>
+            <th width=40%>Regulation</th>
+            <th width=30%>Status</th>
+            <th width=30%>Estimation</th>
+        </tr>
+          <tr>
+            <td id="regulation" width=40%>
+            <span class="subsection_title">EU CSRD</span><br>
+                Corporate Sustainability Reporting Directive</td>
+              <td>DRAFT<br>
+                Entry into force planned 2023-2024</td>
+              <td>Almost Aligned</td>
+          </tr>
+          <tr>
+            <td><span class="subsection_title">OECD</span><br> Guidelines for Multinational Enterprises</td>
+            <td>INTO FORCE<br>Indirect, via EU taxonomy</td>
+            <td>Not Aligned</td>
+          </tr>
+           <tr>
+            <td>UN Guiding Principles on Business and Human Rights</td>
+            <td>INTO FORCE<br>Indirect, via EU taxonomy</td>
+            <td>Not Aligned</td>
+          </tr>
+        </table>
+        <br>
+        <div id="columns">
+          <h2 id="columns-title">{{data.sections.regulator.conformity.title}}</h2>
+
+          <h3>{{data.sections.regulator.conformity.subtitle}}</h3>
+          <section>
+
+          {% for i in data.sections.regulator.conformity.paragraphs %}
+               <p>{{i}}</p>
+          {% endfor %}
+          </section>
+          <div id="chart">
+          {% for i in data.sections.regulator.conformity.images %}
+          <img class="center img-third" src={{i}}>
+          {% endfor %}
+          </div>
+      </div>
+
+        <!-- Footer - DO NOT CHANGE /!-->
+        <div class="footer-basic">
+            <footer>
+                <p class="copyright">FINGREEN AI © 2022</p>
+            </footer>
+        </div>
+
+    </article>

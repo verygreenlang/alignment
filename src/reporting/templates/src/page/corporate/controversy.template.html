@@ -1,0 +1,21 @@
+{% if data.sections.sentinel.indus.choice %}
+
+<article id="columns">
+  <h2 id="columns-title">{{data.sections.sentinel.indus.title}}</h2>
+
+  <h3>{{data.sections.sentinel.indus.subtitle}}</h3>
+  <section>
+
+  {% for i in data.sections.sentinel.indus.paragraphs %}
+       <p>{{i}}</p>
+  {% endfor %}
+  </section>
+  <article id="chart">
+
+  {% for i in data.sections.sentinel.indus.images %}
+  <img class="center img-third" src={{i}}> </img>
+  {% endfor %}
+  </article>
+
+</article>
+{% endif %}

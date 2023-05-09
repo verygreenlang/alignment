@@ -1,0 +1,119 @@
+<!-- Page Alignment_EU Taxonomy!-->
+    <article class="pages" id="pages_eu_taxonomy">
+        <!-- Header - DO NOT CHANGE /!-->
+            <img class="head_logo_fg" src="images/full_logo.png">
+            <h2 > <!-- id="columns-title"> -->
+                <span class="head_title"> FINGREEN AI ESG Report </span>
+                <br/>
+                <span class="head_date"> Generated on {{ data.date }}  </span>
+            </h2>
+            <div class="head_line"></div>
+                <br/>
+            <h2 > <!-- id="columns-title"> -->
+                <span class="page_title"> ESG Standard Alignment </span>
+                <br/>
+                <span class="page_subtitle"> EU Taxonomy </span>
+            </h2>
+
+        <div id="columns">
+        <section>
+           <p>
+               As a public company, {{data.company_name}} can be aligned to various standards and frameworks. You have required that the analysis shall focus on one standard. We determined that the most relevant standard to apply to {{data.company_name}}, based on its activities and your profile, was the EU Taxonomy.</p>
+            <p><span class="source">EU Taxonomy: EU Taxonomy regulation defines criteria to assess whether a given economic activity is to be considered environmentally sustainable or not. The taxonomy itself is made of 88 activities that have been defined by the European legislator. To be considered EU Taxonomic eligible, a company must conduct at least an economic activity present in this list. Companies’ alignment to EU Taxonomy is now a crucial consideration when it comes to their ESG performance assessment. FINGREEN technology can assess and align any company to the EU Taxonomy and perform eligibility checks in seconds.</span></p>
+        </section>
+        </div>
+
+            <h2 > <!-- id="columns-title"> -->
+                <span class="page_subtitle"> EU Taxonomy </span>
+            </h2>
+        <span class="subsection_title">Economic activities </span>
+        <p>The following economic activities has been extracted and estimated for EU Taxonomy alignment. Analysis has been performed on the whole company group, including its subsidiaries according to your settings. </p>
+
+        <!--CHANGE WHOLE SECTION!-->
+        <table width=100%>
+        <tr width=100%>
+            <th width=60%>Economic Activities</th>
+            <th width=40%>Status</th>
+        </tr>
+          <tr>
+            <td>ACTIVITY A - APPLE INC. - Hardware computing</td>
+            <td>EU TAXONOMY NOT ELIGIBLE</td>
+          </tr>
+          <tr>
+            <td>ACTIVITY B - APPLE INC. - Software development</td>
+            <td>EU TAXONOMY NOT ELIGIBLE</td>
+          </tr>
+           <tr>
+            <td>ACTIVITY C - APPLE ENERGY LLC. - Electricity generation</td>
+            <td>EU TAXONOMY ELIGIBLE</td>
+          </tr>
+        </table>
+        <div class="head_line"></div><br><br>
+
+        <!--CHANGE WHOLE SECTION!-->
+        <span class="subsection_title">Activity C - Electricity generation [APPLE ENERGY LLC.]</span>
+
+        <p>Apple Energy LLC. is a subsidiary of Apple Inc.
+Due to the nature of its activities we estimated that it could align with the following EU Taxonomy activity: ACTIVITY 4.3 - Electricity generation from wind power
+This estimation (FINXAI confidence index > 95%) is based on the fact that we detected that Apple Energy LLC. is relying on wind turbines to produce electricity.</p>
+        <span class="source">Source: Delaware companies registry +3 official data sources</span><br><br>
+
+        <span class="head_title"> FINGREEN Insights </span>
+        <p>Construction or operation of electricity generation facilities that produce electricity from wind power. Where economic activity is an integral element of the ‘Installation, maintenance and repair of renewable energy technologies’ as referred to in Section 7.6 of this Annex, the technical screening criteria specified in Section 7.6 apply.
+The economic activities in this category could be associated with several NACE codes, in particular D35.11 and F42.22 in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006.</p>
+        <span class="source">Source: EU TAXONOMY regulation</span><br>
+
+            <h3>A1. Contribution to climate mitigation</h3>
+
+        <!-- One Taxonomy Item!-->
+        <span class="tax_title">A1.1- SUBSTANTIAL CONTRIBUTION</span><br>
+        <span class="pass">PASSED</span>
+        <p>Criteria: The activity generates electricity from wind power.<br>Analysis detail: Criteria is met as Apple Energy LLC. generates electricity from wind power</p>
+        <span class="source">Source: public sources, news articles, company declarations and public reports</span>
+        <br><br>
+
+
+        <!-- One Taxonomy Item!-->
+        <span class="tax_title">A1.2- DO NOT SIGNIFICANT HARM CRITERIA</span><br>
+        <span class="pass">PASSED</span>
+        <p>Criteria: The activity generates electricity from wind power.<br>Analysis detail: Criteria is met as Apple Energy LLC. generates electricity from wind power</p>
+        <span class="source">Source: public sources, news articles, company declarations and public reports</span>
+        <br><br>
+
+        <!-- One Taxonomy Item!-->
+        <span class="tax_title">Conclusion</span><br>
+        <span class="pass">EU Taxonomy Aligned</span>
+        <p>Criteria: The activity generates electricity from wind power.<br>Analysis detail: Criteria is met as Apple Energy LLC. generates electricity from wind power</p>
+        <span class="source"></span>
+        <br><br>
+
+            <h3>A2. Contribution to climate adaptation</h3>
+
+        <div id="columns">
+            <h2 id="columns-title">{{data.sections.alignment.eu.title}}</h2>
+
+            <h3>{{data.sections.alignment.eu.subtitle}}</h3>
+            <section>
+
+            {% for i in data.sections.alignment.eu.paragraphs %}
+                 <p>{{i}}</p>
+            {% endfor %}
+            </section>
+            <div id="chart">
+
+            {% for i in data.sections.alignment.eu.images %}
+            <img class="center img-third" src={{i}}>
+            {% endfor %}
+            </div>
+        </div>
+
+
+
+        <!-- Footer - DO NOT CHANGE /!-->
+        <div class="footer-basic">
+            <footer>
+                <p class="copyright">FINGREEN AI © 2022</p>
+            </footer>
+        </div>
+
+    </article>

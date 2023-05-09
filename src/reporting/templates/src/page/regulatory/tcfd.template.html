@@ -1,0 +1,23 @@
+
+            <article class="chapter">
+              <h2 class="h2-chapter" id="regulatory_tcfd"> Analysis, Based on the TCFD objectives </h2>
+            </article>
+
+            <article id="columns">
+              <h2 id="columns-title">{{data.sections.alignment.tcfd.title}}</h2>
+
+              <h3>{{data.sections.alignment.tcfd.subtitle}}</h3>
+              <section>
+
+              {% for i in data.sections.alignment.tcfd.paragraphs %}
+                   <p>{{i}}</p>
+              {% endfor %}
+              </section>
+              <article id="chart">
+
+              {% for i in data.sections.alignment.tcfd.images %}
+              <img class="center img-third" src={{i}}> </img>
+              {% endfor %}
+              </article>
+
+            </article>

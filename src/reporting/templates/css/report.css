@@ -1,0 +1,56 @@
+
+html {
+  color: rgba(33,129,24,1);
+  font-family: Fira Sans;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.5;
+}
+h1 {
+  color: rgba(33,129,24,1);
+  font-size: 38pt;
+  margin: 5cm 2cm 0 2cm;
+  page: no-chapter;
+  width: 100%;
+}
+h2, h3, h4 {
+  color: black;
+  font-weight: 400;
+}
+
+address h2 {
+  break-before: always;
+  font-size: 28pt;
+  string-set: heading content();
+}
+
+body::after {
+  margin: 0;
+    padding: 0;
+  /* margin: 10mm; */
+  content: '';
+  position: fixed;
+  top: 0;
+  /* right: 0; */
+ bottom: 0;
+  left: 0;
+  color: #fff;
+  right: 5px;
+  /* z-index: 99; */
+
+  /* background-repeat: space;  */
+  width: 1000px;
+  background:url("../images/watermark.png");
+  background-size: cover;
+  opacity: 0.05;
+  /* transform: rotate(-30deg); */
+  pointer-events: none;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 15pt;
+}
+h4 {
+  font-size: 13pt;
+}

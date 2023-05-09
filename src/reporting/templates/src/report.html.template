@@ -1,0 +1,147 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/report.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/head.css" rel="stylesheet">
+    <link href="css/chapter.css" rel="stylesheet">
+    <link href="css/columns.css" rel="stylesheet">
+    <link href="css/contents.css" rel="stylesheet">
+    <link href="css/foot.css" rel="stylesheet">
+    <link href="css/offers.css" rel="stylesheet">
+    <link href="css/skills.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
+    <link href="css/typography.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+
+    <title>Report</title>
+    <meta name="description" content="Report example">
+  </head>
+
+  <body>
+
+      {% include "page/cover/cover.template.html" %}
+
+      {% include "page/cover/summary.template.html" %}
+
+      {% include "page/cover/table_of_content.template.html" %}
+
+      {% include "page/introduction/duedil_and_methods.html" %}
+
+      {% include "page/financial/main.template.html" %}
+            {% if 'priority' in data %}
+      {% endif %}
+
+<!-- Chapter Page ESG Standard Alignment/!-->
+    <article class="chapter"id="chapter_alignment" >
+      <h2 class="h2-chapter">ESG Standard Alignment</h2>
+      <ol id="contents">
+        <li><h4><a href="#pages_eu_taxonomy">EU Taxonomy</a></h4></li>
+        <li><h4><a href="#pages_tcfd">TCFD Alignments</a></h4></li>
+        <li><h4><a href="#pages_sdg">UN SDG Goals</a></h4></li>
+        <li><h4><a href="#pages_sasb">SASB</a></h4></li>
+      </ol>
+    </article>
+
+
+
+
+
+        {% include "page/Standard/eu.template.html" %}
+        {% include "page/Standard/tcfd.template.html" %}
+        {% include "page/Standard/SASB.template.html" %}
+        {% include "page/Standard/sbti.template.html" %}
+
+
+
+
+<!-- Chapter Page ESG Regulatory Compliance/!-->
+    <article class="chapter" id="chapter_compliance" >
+      <h2 class="h2-chapter">ESG Regulatory Compliance</h2>
+      <ol id="contents">
+          <li><h4><a href="#pages_quick_check">Regulations Alignment Quick Check</a></h4></li>
+          <li><h4><a href="#pages_sfdr_eligibility">SFDR: Eligibility Check</a></h4></li>
+          <li><h4><a href="#pages_sfdr_pai">SFDR: Principal Adverse Impacts</a></h4></li>
+          <li><h4><a href="#pages_sfdr_analysis">SFDR: Analysis</a></h4></li>
+      </ol>
+    </article>
+        {% include "page/regulatory/quick_check.template.html" %}
+        {% include "page/regulatory/SFDR.template.html" %}
+        {% include "page/regulatory/sfdr_analysis.template.html" %}
+        {% include "page/regulatory/sfdr_pai.template.html" %}
+
+<!-- Chapter Page ESG Metrics and Current Policies/!-->
+    <article class="chapter" id="chapter_metrics">
+       <h2 class="h2-chapter">ESG Metrics and Current Policies</h2>
+      <ol id="contents">
+          <li><h4><a href="#pages_e_metrics">Environmental Metrics</a></h4></li>
+          <li><h4><a href="#pages_s_metrics">Social Metrics</a></h4></li>
+          <li><h4><a href="#pages_g_metrics">Governance Metrics</a></h4></li>
+          <li><h4><a href="#pages_gaps">Current Policies and Gaps</a></h4></li>
+          <li><h4><a  href="#pages_double_materiality">Double Materiality</a></h4></li>
+      </ol>
+    </article>
+        {% include "page/policies/environmental.template.html" %}
+        {% include "page/policies/governance.template.html" %}
+        {% include "page/policies/social.template.html" %}
+        {% include "page/policies/gaps.template.html" %}
+        {% include "page/policies/double_mat.template.html" %}
+
+<!-- Chapter Page ESG Reputatinoal Risks/!-->
+    <article class="chapter" id="chapter_reputation" >
+       <h2 class="h2-chapter">ESG Reputational Risks</h2>
+      <ol id="contents">
+          <li><h4><a href="#pages_controversy">ESG Controversies and Anomaly Detection</a></h4></li>
+          <li><h4><a href="#pages_sentinel">Sentimental Analysis</a></h4></li>
+      </ol>
+    </article>
+
+
+        {% include "page/reputational/controversy.template.html" %}
+        {% include "page/reputational/sentinel.template.html" %}
+
+<!-- Chapter Page FINGREEN Summary/!-->
+    <article class="chapter" id="chapter_summary">
+       <h2 class="h2-chapter">FINGREEN Summary</h2>
+      <ol id="contents">
+          <li><h4><a href="#pages_insight">Proposed Insights</a></h4></li>
+          <li><h4><a href="#pages_open_data">Open-source Data Referential</a></h4></li>
+          <li><h4><a href="#pages_limitations">Limitations</a></h4></li>
+      </ol>
+    </article>
+        {% include "page/reputational/controversy.template.html" %}
+        {% include "page/reputational/sentinel.template.html" %}
+
+
+<!-- Chapter Page FINGREEN Summary/!-->
+    <article class="chapter" id="chapter_summary">
+       <h2 class="h2-chapter">FINGREEN Summary</h2>
+      <ol id="contents">
+          <li><h4><a href="#pages_insight">Proposed Insights</a></h4></li>
+          <li><h4><a href="#pages_open_data">Open-source Data Referential</a></h4></li>
+          <li><h4><a href="#pages_limitations">Limitations</a></h4></li>
+      </ol>
+    </article>
+
+   {% include "page/summary/insights.template.html" %}
+   {% include "page/summary/limitations.template.html" %}
+   {% include "page/summary/opendata.template.html" %}
+
+
+    <article class="chapter" id="chapter_appendix">
+       <h2 class="h2-chapter">Appendix</h2>
+         <ul>
+             <li><h4><a href="#appendix_glossay">FINGREEN ESG Glossary</a></h4></li>
+             <li><h4><a href="#appendix_catalog">FINGREEN ESG Metrics Catalog</a></h4></li>
+             <li><h4><a href="#appendix_data">FINGREEN Data Approach</a></h4></li>
+             <li><h4><a href="#appendix_legal">FINGREEN Legal</a></h4></li>
+        </ul>
+    </article>
+    {% include "page/annex/glossary.template.html" %}
+    {% include "page/annex/metrics.template.html" %}
+    {% include "page/annex/data_approach.template.html" %}
+    {% include "page/annex/legal.template.html" %}
+
+  </body>
+</html>

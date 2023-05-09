@@ -1,0 +1,23 @@
+
+          <article class="chapter">
+            <h2 class="h2-chapter" id="regulatory_eu">Analysis, Based on the EU taxonomy objectives </h2>
+
+          </article>
+          <article id="columns">
+            <h2 id="columns-title">{{data.sections.alignment.eu.title}}</h2>
+
+            <h3>{{data.sections.alignment.eu.subtitle}}</h3>
+            <section>
+
+            {% for i in data.sections.alignment.eu.paragraphs %}
+                 <p>{{i}}</p>
+            {% endfor %}
+            </section>
+            <article id="chart">
+
+            {% for i in data.sections.alignment.eu.images %}
+            <img class="center img-third" src={{i}}> </img>
+            {% endfor %}
+            </article>
+
+          </article>

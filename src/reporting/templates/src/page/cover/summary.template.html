@@ -1,0 +1,49 @@
+<article  id="exe_summary">
+    <!-- Header - DO NOT CHANGE /!-->  
+        <img class="head_logo_fg" src="images/full_logo.png">
+        <h2 > <!-- id="columns-title"> -->
+        <span class="head_title"> FINGREEN AI ESG Report </span>
+        <br/>
+        <span class="head_date"> Generated on {{ data.date }} </span>
+        </h2>
+        <p id="headline_p">
+            FINGREEN AI has analysed the company "{{data.company_name}}" through {{data.data_points}} data points.
+            The analysis below relied on estimation produced by FINXAI engine,
+            with a confidence index considered as satisfactory based on your settings.
+            The following report has been generated on {{data.date}}.
+        </p>
+        <div class="head_line"></div>
+            <br/>
+        <!-- Header - DO NOT CHANGE /!-->
+        <h2 > <!-- id="columns-title"> -->
+            <span class="page_subtitle"> Executive Summary </span>
+        </h2>
+        <div id="columns">
+        <section>
+           <p>
+               This pre-assessment report has been generated automatically on        {{data.date}}.
+               
+               FINGREEN AI engine has analyzed the company Apple Inc. through {{data.data_points}} data points.
+               
+               The analysis below relied on estimation produced by the FINXAI engine, with a confidence index considered as {{confidence_level}} based on your settings. This means we believe the results presented in this report are accurate enough to be leveraged and do not require further data collection from {{data.company_name}} for the metrics you have selected.</p>
+            <p><img class="page_pic" src="images/datapoints.png">
+                <img src="images/confidence_level_{{confidence_level}}.png"></p>
+        </section>
+        </div>
+        <br>
+        <h2 > <!-- id="columns-title"> -->
+            <span class="page_subtitle"> ESG Metrics in Brief </span>
+        </h2>
+        <div id="columns">
+        <section>
+           <p>FINGREEN AI engine has selected relative ESG metrics in analyzing the company's performance and its benchmarking position within the industry. Metrics below highlight  CO2 Emission, Water Consumption, and Women in Management Positions of {{data.company_name}}. </p>
+            <p><img class="page_pic" src="images/esg_metrics_summary.png"></p>
+        </section>
+        </div>
+        
+        <div class="footer-basic">
+        <footer>
+            <p class="copyright">FINGREEN AI © 2022</p>
+        </footer>
+      </div>
+    </article>

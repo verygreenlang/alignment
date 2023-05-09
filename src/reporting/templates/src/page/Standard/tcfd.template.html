@@ -1,0 +1,70 @@
+
+<!-- Page Alignment_TCFD!-->
+    <article class="pages" id="pages_tcfd">
+        <!-- Header - DO NOT CHANGE /!-->
+            <img class="head_logo_fg" src="images/full_logo.png">
+            <h2 > <!-- id="columns-title"> -->
+                <span class="head_title"> FINGREEN AI ESG Report </span>
+                <br/>
+                <span class="head_date"> Generated on {{ data.date }}  </span>
+            </h2>
+            <div class="head_line"></div>
+                <br/>
+            <h2 > <!-- id="columns-title"> -->
+                <span class="page_title"> ESG Standard Alignment </span>
+                <br/>
+                <span class="page_subtitle"> TCFD </span>
+            </h2>
+
+            <h3>Governance</h3>
+
+        <span class="subsection_title_2">The board’s oversight of climate-related risks and opportunities.</span><br>
+        <span class="subsection_title_2">Management’s role in assessing and managing  climate-related risks and opportunities.</span><br>
+        <span class="source">Source: public sources, news articles, company declarations and public reports</span>
+        <br><br>
+
+
+            <h3>Strategy</h3>
+
+        <span class="subsection_title_2">Climate-related risks and opportunities the organization has identified over the short, medium, and long term</span><br>
+        <span class="subsection_title_2">Impact of climate-related risks and opportunities on the organization’s businesses, strategy, and financial planning</span><br>
+        <span class="subsection_title_2">Resilience of the organization’s strategy, taking into consideration different climate-related scenarios, including a 2°C or lower scenario.</span><br>
+        <span class="source">Source: public sources, news articles, company declarations and public reports</span>
+        <br><br>
+
+
+            <h3>Risk Management</h3>
+
+        <span class="subsection_title_2">Company’s processes for identifying and assessing climate-related risks'</span><br>
+        <span class="subsection_title_2">Company’s processes for managing climate-related risks'</span><br>
+        <span class="subsection_title_2">How processes for identifying, assessing, and managing climate-related risks are integrated into the organization’s overall risk management.</span><br>
+        <span class="source">Source: public sources, news articles, company declarations and public reports</span>
+        <br><br>
+
+            <h3>Metrics and Targets</h3>
+
+        <span class="subsection_title_2">Describe the targets used by the organization to manage climate- related risks and opportunities and performance against targets.</span><br>
+        <span class="source">Source: public sources, news articles, company declarations and public reports</span>
+        <br><br>
+        <div id="columns">
+            <h2 id="columns-title">{{data.sections.alignment.tcfd.title}}</h2>
+            <h3>{{data.sections.alignment.tcfd.subtitle}}</h3>
+            <section>
+            {% for i in data.sections.alignment.tcfd.paragraphs %}
+                 <p>{{i}}</p>
+            {% endfor %}
+            </section>
+            <div id="chart">
+            {% for i in data.sections.alignment.tcfd.images %}
+            <img class="center img-third" src={{i}}>
+            {% endfor %}
+            </div>
+        </div>
+        <!-- Footer - DO NOT CHANGE /!-->
+        <div class="footer-basic">
+            <footer>
+                <p class="copyright">FINGREEN AI © 2022</p>
+            </footer>
+        </div>
+
+    </article>

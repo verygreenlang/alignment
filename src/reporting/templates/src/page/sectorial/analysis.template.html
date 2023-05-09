@@ -1,0 +1,85 @@
+<article id="columns">
+  <h2 id="columns-title">Sectorial analysis for: {{data.company_name}}</h2>
+
+  <h3 id="ESG_policies_analysis">ESG policies analysis</h3>
+
+  <section>
+    <p>
+ Our FINXAI ENGINE,
+powered by advanced Explainable Artificial Intelligence proprietary technologies,
+has selected {{data.number_of_metrics}} relevant metrics and indicators when it comes to benchmarking
+{{data.company_name}} versus its competitors selected for this analysis {% for item in data.competitors %}{{item}} {% endfor  %}.
+For the purpose of this sample report we focused our analysis on 3 metrics out of the 10 suggested by our engine: {% for item in data.metrics %}{{item}} {% endfor  %}.
+. {% for item in data.metrics_desc %}{{item}} {% endfor  %}.
+    </p>
+    <p>
+    The analysis below ingested {{data.data_points}} data points and came to the following conclusion:
+     {{data.company_name}} is performing better than one of its competitors
+     {% for  key, value in data.worst_competitor.items() %} {{key}} with {{value}} {% endfor  %}.
+     {{data.company_name}} is performing worst than one of its competitors
+     {% for  key, value in data.better_competitor.items() %} {{key}} with {{value}} {% endfor  %}.
+    </p>
+
+  </section>
+  <section>
+
+
+  <article>
+  {% for table in tables %}
+  {{titles[loop.index]}}
+  {{ table|safe }}
+  {% endfor %}
+
+  </article>
+
+  </section>
+
+  <h3>Estimation Engine with continous updates</h3>
+
+  <section>
+    <p>
+The EU Taxonomy is completed by Delegated Acts released by the European Commission.
+Not all the Delegated Acts have been published as of today which means some areas cannot be assessed in theory, such as waste management, circular economy, pollution prevention and protection/restoration of biodiversity and ecosystems.
+    </p>
+    <p>
+    However our FINGREEN ENGINE can estimate the compliance and alignment of every company to those objectives based on ingestion of hundreds of other standards and practices. In addition, our knowledge database is constantly updated. In case of any evolution in regulations or publication of new Delegated Act we update our analysis promptly, faster than any of our competitors thanks to our own proprietary Programming Language.
+
+    </p>
+
+  </section>
+
+  <h3>Automated EU Taxonomy and SFDR reports</h3>
+
+  <section>
+    <p>
+The recent EU Taxonomy regulation defines criteria to assess whether a given economic activity is to be considered as environmentally sustainable or not. The taxonomy itself is made of 88 activities that have been defined by the European legislator. To be considered as EU Taxonomic eligible, a company must conduct at least an economic activity present in this list.
+    </p>
+    <p>
+Companies’ alignment to EU Taxonomy is now a crucial consideration when it comes to its ESG performance assessment. Our technology can assess and align any company to the EU Taxonomy and perform eligibility checks in seconds. In addition, EU Taxonomy alignment is now required to be disclosed by financial institutions when publishing mandatory extra-financial reports such as SFDR. Our technology also calcultates PAI indicators for SFDR generation, as presented in the table below.
+    </p>
+
+  </section>
+
+  <h3 id="fai-insights">FINGREEN AI’s Insight</h3>
+
+        <section>
+          <p>
+Our FINGREEN Web robots have collected thousands of web pages relative to {{data.company_name}} and its competitors.
+          </p>
+          <p>
+   Based on a word and topic based analytic we have extracted one unique ESG impact that {{data.company_name}} has more than anyone else.
+    Indeed, none of their competitors have an exposure on {{data.company_key_theme}}.
+     Using this them could be a great way of improving their ESG reputation.
+          </p>
+
+        </section>
+
+        <section>
+        {% for table in tables %}
+          {{titles[loop.index]}}
+          {{ table|safe }}
+        {% endfor %}
+
+        </section>
+
+</article>

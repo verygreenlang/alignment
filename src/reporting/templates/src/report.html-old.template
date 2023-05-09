@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/report.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/head.css" rel="stylesheet">
+    <link href="css/chapter.css" rel="stylesheet">
+    <link href="css/columns.css" rel="stylesheet">
+    <link href="css/contents.css" rel="stylesheet">
+    <link href="css/foot.css" rel="stylesheet">
+    <link href="css/offers.css" rel="stylesheet">
+    <link href="css/skills.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
+    <link href="css/typography.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+
+    <title>Report</title>
+    <meta name="description" content="Report example">
+  </head>
+
+  <body>
+
+      {% include "page/cover/cover.template.html" %}
+
+      {% include "page/cover/summary.template.html" %}
+
+      {% include "page/cover/table_of_content.template.html" %}
+
+      {% include "page/financial/main.template.html" %}
+      {% if 'priority' in data %}
+      {% endif %}
+
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-conformity"> REGULATORY - CONFORMITY TO SPECIFIC ELIGIBLE REGULATIONS BY COUNTRY</h2>
+    </article>
+
+    {% include "page/regulatory/by_country.template.html" %}
+
+
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-human_rights"> REGULATORY -  BASIC HUMAN & SOCIAL RIGHTS</h2>
+    </article>
+
+        {% include "page/regulatory/human_rights.template.html" %}
+
+
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-regulatory_eu"> REGULATORY BUT NOT MANDATORY </h2>
+    </article>
+
+        {% include "page/regulatory/eu.template.html" %}
+
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-regulatory_tcfd">OPTIONAL (TCFD / ISSB / SASB)  </h2>
+    </article>
+        {% include "page/regulatory/tcfd.template.html" %}
+
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-sectorial_analysis"> SECTORIAL ANALYSIS  </h2>
+    </article>
+
+        {% include "page/sectorial/analysis.template.html" %}
+
+
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-CSR_CORPORATE"> CSR CORPORATE  </h2>
+    </article>
+
+        {% include "page/corporate/csr.template.html" %}
+
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-REALISED_AUDITS">  REALISED_AUDITS </h2>
+    </article>
+
+        {% include "page/corporate/audits.template.html" %}
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-reputation"> REPUTATIONAL AND CONTROVERSIES / WEAK SIGNAL ANALYSIS  </h2>
+    </article>
+
+    {% include "page/corporate/controversy.template.html" %}
+    <article class="chapter" >
+      <h2 class="h2-chapter" id="chapter-double_mat"> DOUBLE MATERIALITY – risk environmental on the entreprise activities  </h2>
+    </article>
+
+    {% include "page/corporate/double.template.html" %}
+
+     <article class="chapter">
+      <h2 class="h2-chapter" id="annexe-glossary"> FINGREEN Glossary </h2>
+     </article>
+
+
+    {% include "page/annex/glossary.template.html" %}
+
+    <article class="chapter">
+      <h2 class="h2-chapter" id="annexe-metric-lists">FINGREEN Metrics </h2>
+    </article>
+
+    {% include "page/annex/metrics.template.html" %}
+
+    <article class="chapter">
+      <h2 class="h2-chapter" id="annexe-legal"> FINGREEN Legal </h2>
+    </article>
+    {% include "page/annex/legal.template.html" %}
+
+  </body>
+</html>

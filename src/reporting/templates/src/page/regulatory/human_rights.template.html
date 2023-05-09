@@ -1,0 +1,18 @@
+<article id="columns">
+  <h2 id="columns-title">{{data.sections.regulator.humanright.title}}</h2>
+
+  <h3>{{data.sections.regulator.humanright.subtitle}}</h3>
+  <section>
+
+  {% for i in data.sections.regulator.humanright.paragraphs %}
+       <p>{{i}}</p>
+  {% endfor %}
+  </section>
+  <article id="chart">
+
+  {% for i in data.sections.regulator.humanright.images %}
+  <img class="center img-third" src={{i}}> </img>
+  {% endfor %}
+  </article>
+
+</article>

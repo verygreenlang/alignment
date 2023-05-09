@@ -1,0 +1,74 @@
+#skills section#style::before {
+  background: url(style.svg) no-repeat center rgba(33,129,24,1);
+  background-size: 50%;
+  content: '';
+  display: inline-block;
+  float: left;
+  height: 2cm;
+  margin-right: .5cm;
+  vertical-align: middle;
+  width: 2cm;
+}
+#skills section h4 {
+  margin: 0;
+}
+#skills section p {
+  margin-top: 0;
+}
+
+
+#skills section#heading::before {
+  background: url(heading.svg) no-repeat center rgba(33,129,24,1);
+  background-size: 50%;
+  content: '';
+  display: inline-block;
+  float: left;
+  height: 2cm;
+  margin-right: .5cm;
+  vertical-align: middle;
+  width: 2cm;
+}
+#skills section#multi-columns::before {
+  background: url(multi-columns.svg) no-repeat center rgba(33,129,24,1);
+  background-size: 50%;
+  content: '';
+  display: inline-block;
+  float: left;
+  height: 2cm;
+  margin-right: .5cm;
+  vertical-align: middle;
+  width: 2cm;
+}
+#skills section#internal-links::before {
+  background: url(internal-links.svg) no-repeat center rgba(33,129,24,1);
+  background-size: 50%;
+  content: '';
+  display: inline-block;
+  float: left;
+  height: 2cm;
+  margin-right: .5cm;
+  vertical-align: middle;
+  width: 2cm;
+}
+
+
+#skills h3 {
+  background: rgba(33,129,24,1);
+  margin: 0 -3cm 1cm;
+  padding: 1cm 1cm 1cm 3cm;
+  width: 21cm;
+}
+#skills section {
+  padding: .5cm 0;
+}
+#skills section#table-content::before {
+  background: url(table-content.svg) no-repeat center rgba(33,129,24,1);
+  background-size: 50%;
+  content: '';
+  display: inline-block;
+  float: left;
+  height: 2cm;
+  margin-right: .5cm;
+  vertical-align: middle;
+  width: 2cm;
+}

@@ -1,0 +1,37 @@
+
+#cover {
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  height: 297mm;
+}
+#cover address {
+  background: rgba(33,129,24,1);
+  color:white;
+  flex: 1 50%;
+  margin: 0 -2cm;
+  padding: 1cm 0;
+  white-space: pre-wrap;
+}
+#cover address:first-of-type {
+  padding-left: 3cm;
+}
+#cover address a {
+  color:white;
+
+}
+
+#cover h3 {
+  padding-top:0.2cm;
+  color:#325B06;
+
+}
+#cover h2 {
+  color:#325B06;
+
+}
+#text-cover {
+  padding-left: 5cm;
+  color:#325B06;
+
+}
