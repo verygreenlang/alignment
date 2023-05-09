@@ -6,7 +6,6 @@
 
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/94466071?s=200&v=4" alt="Logo" width="140" height="140">
   <br>Fingreen AI - open source
   <br>Alignment Core
 </h1>
